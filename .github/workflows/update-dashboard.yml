@@ -39,7 +39,7 @@ jobs:
         env:
           DASHBOARD_OWNER: ${{ github.repository_owner }}
           INCLUDE_PRIVATE: ${{ vars.INCLUDE_PRIVATE }}
-          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFICFOLIO_TOKEN }}
         run: python scripts/trafficfolio.py update
 
       - name: Commit dashboard changes
