@@ -28,7 +28,7 @@ jobs:
 
       - name: Verify setup
         env:
-          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFICFOLIO_TOKEN }}
         run: |
           if [ -z "$TRAFFIC_TOKEN" ]; then
             echo "::error::TRAFFIC_TOKEN is missing. Follow the README setup instructions."
